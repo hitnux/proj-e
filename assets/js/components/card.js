@@ -30,9 +30,9 @@ class Card extends HTMLElement{
     }, 10); 
     setTimeout(() => {
       if(this.getAttribute("sameday") === "true"){
-        this.shadowRoot.querySelector("button.sameday").style.display = "block";
+        this.shadowRoot.querySelector("div.sameday").style.display = "block";
       }else{
-        this.shadowRoot.querySelector("button.sameday").style.display = "none";
+        this.shadowRoot.querySelector("div.sameday").style.display = "none";
       }
     }, 10);
     setTimeout(() => {
