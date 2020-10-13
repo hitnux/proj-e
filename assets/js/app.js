@@ -8,7 +8,6 @@ $.getJSON( bestsellerlist.getAttribute("data-uri"), function( data ) {
 // Get Related
 $.getJSON( relatedlist.getAttribute("data-uri"), function( data ) {
     data = data.slice(0,10);
-    console.log(data);
     createCard("cards", data);
 });
 
