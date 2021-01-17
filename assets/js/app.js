@@ -2,12 +2,12 @@ const bestsellerlist = document.getElementsByClassName("bestseller__slider")[0];
 const relatedlist = document.getElementsByClassName("cards")[0];
 const basketCount = document.getElementsByClassName("backet--count")[0];
 // Get BestSellers
-createCard(bestsellerlist.getAttribute("data-uri"),"bestseller__slider", data);
+createCard(bestsellerlist.getAttribute("data-uri"),"bestseller__slider");
 // Get Related
-createCard(relatedlist.getAttribute("data-uri").slice(0,10),"cards", data);
+createCard(relatedlist.getAttribute("data-uri").slice(0,10),"cards");
 
 
-function createCard(url, className, data){
+function createCard(url, className){
     $.getJSON( url, function( data ) {
         data.forEach(d => {
             let element = document.createElement("product-card");
